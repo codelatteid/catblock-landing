@@ -1,0 +1,267 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="application-name" content="CatBlock" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#fff" />
+    <meta name="apple-mobile-web-app-title" content="CatBlock" />
+    <title>CatBlock</title>
+    <link rel="alternate" href="https://catblock.codelatte.id/" hreflang="en-US" />
+    <link rel="canonical" href="https://catblock.codelatte.id/" />
+    <meta name="description" content="Stay focused. Get distracted by a cat instead." />
+    <meta name="referrer" content="no-referrer-when-downgrade" />
+    <meta property="fb:app_id" content="232602895406519" />
+    <meta property="og:site_name" content="catblock.codelatte.id" />
+    <meta property="og:title" content="CatBlock" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://catblock.codelatte.id/" />
+    <meta property="og:description" content="Stay focused. Get distracted by a cat instead." />
+    <meta property="og:image" content="https://catblock.codelatte.id/thumbs.png" />
+    <meta property="og:image:width" content="640" />
+    <meta property="og:image:height" content="640" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="CatBlock" />
+    <meta name="twitter:url" content="https://catblock.codelatte.id/" />
+    <meta name="twitter:site" content="@kustirama" />
+    <meta name="twitter:creator" content="@kustirama" />
+    <meta name="twitter:description" content="Stay focused. Get distracted by a cat instead." />
+    <meta name="twitter:image" content="https://catblock.codelatte.id/thumb.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/icon.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/icon.png" />
+    <link rel="mask-icon" href="/icon.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#2c2c2c" />
+    <meta name="google-site-verification" content="bScbaSswJUa_NNirw01hQS7ORY9QF5Nwc2xXS1-aSUw" />
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap');
+        body {
+            font-family: "Sofia Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            background-color: #0c0f0a;
+            color: #999999;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 80vh;
+            padding: 20px;
+        }
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+            max-width: 100%;
+        }
+
+        .content {
+            max-width: 630px;
+            padding: 20px;
+            text-align: left;
+            flex: 1; 
+            margin-right: 0;
+        }
+        .content h1 {
+            font-weight: bold;
+            font-size: 1.4em;
+            margin-bottom:2px;
+        }
+        .content h2 {
+            margin-top:2px;
+            line-height: 1;
+            font-size: 1rem;
+            text-align: justify;
+        }
+        .content p {
+            line-height: 1.5;
+            font-size: 1.1rem;
+            text-align: justify;
+        }
+        .links {
+            margin-top: 1em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            text-align: center;
+        }
+
+        .links a {
+            position: relative;
+            text-decoration: none;
+            color: #999;
+            padding: 0 8px;
+        }
+
+        .links a::before {
+            content: "> ";
+            opacity: 0.7;
+        }
+
+        .links a::after {
+            content: " <";
+            opacity: 0.7;
+        }
+
+        .links a:hover {
+            color: #fff;
+        }
+        .yhaa {
+            padding-bottom: 0.5px;
+            color: #999999;
+            text-decoration: none;
+        }
+
+        a.yhaa {
+            padding-bottom: 1.5px;
+            color: #999999;
+            text-decoration: underline;
+        }
+
+        a.yhaa:hover {
+            padding-bottom: 0.5px;
+            color: #999999;
+            text-decoration: none;
+            text-decoration: underline;
+            text-decoration-color: #888888;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                text-align: center;
+            }
+            .image {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+            .content {
+                padding: 10px;
+                max-width: 100%;
+            }
+            .links {
+                margin-top: 15px;
+            }
+        }
+        .screenshots {
+            max-width:100%;
+        }
+        .slider {
+            width: 100%;
+            max-width: 630px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .slides {
+            display: flex;
+            transition: transform 0.4s ease;
+        }
+
+        .slides img {
+            width: 100%;
+            flex-shrink: 0;
+            border-radius: 6px;
+        }
+        .nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0,0,0,0.5);
+            border: none;
+            color: #fff;
+            font-size: 20px;
+            padding: 8px 12px;
+            cursor: pointer;
+            border-radius: 4px;
+            z-index: 10;
+        }
+
+        .nav:hover {
+            background: rgba(0,0,0,0.8);
+        }
+
+        .prev {
+            left: 10px;
+        }
+
+        .next {
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>CatBlock</h1>
+            <h2>— Stay focused. Get distracted by a cat instead.</h2>
+            <p>
+                CatBlock blocks distracting websites by displaying a fullscreen image or GIF overlay whenever the user visits a site on their personal blocklist. The sole purpose is to interrupt and discourage visits to time-wasting sites.
+            </p>
+
+            <div class="slider">
+                <button class="nav prev">&#10094;</button>
+                
+                <div class="slides">
+                    <img src="screenshots-1.png">
+                    <img src="screenshots-2.png">
+                    <img src="screenshots-3.png">
+                </div>
+
+                <button class="nav next">&#10095;</button>
+            </div>
+
+            <div class="links">
+                <a href="#">Chrome Web Store</a>
+                <a href="#">Add-ons for Firefox</a>
+                <a href="/privacy-policy">Privacy Policy</a>
+            </div>
+
+            <center style="margin-top:2em;">akbar[at]kustirama.id</center>
+        </div>
+    </div>
+
+    <script>
+        let index = 0;
+        const slides = document.querySelector('.slides');
+        const total = document.querySelectorAll('.slides img').length;
+
+        function updateSlide() {
+            slides.style.transform = `translateX(-${index * 100}%)`;
+        }
+
+        document.querySelector('.next').onclick = () => {
+            index = (index + 1) % total;
+            updateSlide();
+        };
+
+        document.querySelector('.prev').onclick = () => {
+            index = (index - 1 + total) % total;
+            updateSlide();
+        };
+
+        // auto slide
+        setInterval(() => {
+            index = (index + 1) % total;
+            updateSlide();
+        }, 3000);
+    </script>
+</body>
+
+
+</html>
